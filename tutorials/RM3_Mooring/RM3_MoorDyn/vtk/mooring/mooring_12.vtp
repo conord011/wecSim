@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- WEC-Sim Visualization using ParaView -->
+<!--   model: RM3MoorDyn1.slx - ran on 12-Jan-2018 15:43:29 -->
+<!--   mooring:  MoorDyn -->
+<!--   time:  2.8211 -->
+<VTKFile type="PolyData" version="0.1">
+  <PolyData>
+    <Piece NumberOfPoints="20" NumberOfLines="19">
+      <Points>
+        <DataArray type="Float32" NumberOfComponents="3" format="ascii">

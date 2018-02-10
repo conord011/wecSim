@@ -1,0 +1,46 @@
+
+WEC-Sim Read Input File ...   
+Elapsed time is 0.484133 seconds.
+
+WEC-Sim Pre-processing ...   
+	Infinite water depth specified in BEM, "waves.waterDepth" set to 200m for vizualisation.
+Elapsed time is 0.233014 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 500
+	Time Step Size                 (sec) = 0.1
+	Ramp Function Time             (sec) = 0
+	Total Number of Time Steps           = 5000 
+
+Wave Environment: 
+	Wave Type                            = No Wave (Convolution Integral Calculation)
+
+List of Body: Number of Bodies = 2 
+
+	***** Body Number 0, Name: float *****
+	Body CG                          (m) = [0,0,-0.72]
+	Body Mass                       (kg) = 725834 
+	Body Diagonal MOI              (kgm2)= [2.09073E+07,2.13061E+07,3.70855E+07]
+
+	***** Body Number 1, Name: spar *****
+	Body CG                          (m) = [0,0,-21.29]
+	Body Mass                       (kg) = 886691 
+	Body Diagonal MOI              (kgm2)= [9.44196E+07,9.44071E+07,2.85422E+07]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 1000
+	PTO Damping           (Ns/m;Nsm/rad) = 1.2E+06
+
+List of Constraint(s): Number of Constraints = 1 
+
+	***** Constraint Name: Constraint1 *****
+
+
+Simulating the WEC device defined in the SimMechanics model RM3MoorDyn.slx...   
+Elapsed time is 110.951606 seconds.
+
+Post-processing and saving...   
+Elapsed time is 2.207940 seconds.

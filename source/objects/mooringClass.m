@@ -19,15 +19,15 @@ classdef mooringClass<handle
         name                    = 'NOT DEFINED'                                 % Name of the constraint used 
         ref                     = [0 0 0]                                       % Mooring Reference location. Default = [0 0 0]        
         matrix                  = struct(...                                    % Structure defining damping, stiffness, and pre-tension.
-                                         'c',          zeros(6,6), ...              % Mooring damping, 6 x 6 matrix. 
-                                         'k',          zeros(6,6), ...              % Mooring stiffness, 6 x 6 matrix.
+                                         'c',          zeros(3,3), ...              % Mooring damping, 6 x 6 matrix. 
+                                         'k',          zeros(3,3), ...              % Mooring stiffness, 6 x 6 matrix.
                                          'preTension', [0 0 0 0 0 0])               % Mooring preTension, Vector length 6.
         initDisp                = struct(...                                    % Structure defining initial displacement parameters
                                    'initLinDisp', [0 0 0], ...                      % Initial displacement of center of Reference location, default = [0 0 0]
                                    'initAngularDispAxis',  [0 1 0], ...             % Initial displacement axis of rotation default = [0 1 0]
                                    'initAngularDispAngle', 0)                       % Initial angle of rotation default = 0
-        moorDynLines            = 0                                             % Number of lines in MoorDyn
-        moorDynNodes            = []                                            % number of nodes for each line. Vector length number of lines.
+        moorDynLines            = 3                                             % Number of lines in MoorDyn
+        moorDynNodes            = [16]                                            % number of nodes for each line. Vector length number of lines.
     end
 
     properties (SetAccess = 'public', GetAccess = 'public') %internal
